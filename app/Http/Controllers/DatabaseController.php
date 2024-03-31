@@ -349,7 +349,7 @@ class DatabaseController extends Controller
             return redirect()->back()->with("fails", "Invalid file format!!!");
         }
         $pics = time() . $file->getClientOriginalName();
-        $file->move(public_path('image'), $pics);
+        $file->storeAs('image', $pics);
         $stock->Img_phone = "image/" . $pics;
         $stock->save();
         return redirect()->back()->with("success", "Successfully Inserted!!!");
