@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+/* --dark sidebar rgb(63, 43, 43)--- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+    margin: 0;
+}
+:root {
+    --pri-sidebar: rgb(66, 55, 123);
+    --pri-sidebar-color: rgb(240, 229, 229);
+    --pri-sidebar-hover: #fff;
+    --pri-sidebar-color-hover: rgb(89, 69, 62);
+    --pri-card-content-color: rgb(251, 251, 251);
+    --pri-card1-content-bg: #7da0fa;
+    --pri-card2-content-bg: #4747a1;
+    --pri-card3-content-bg: #7978e9;
+}
+.containers {
+    margin-left: 70px;
+    width: calc(100% - 70px);
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    transition: all 300ms ease-in;
+    background-color: var(--pri-sidebar-hover);
+}
+
+.main_container {
+    margin-left: 270px;
+    width: calc(100% - 270px);
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    transition: all 300ms ease-in;
+    background-color: var(--pri-sidebar-hover);
+    /* background-color: #7DA0FA; */
+    /* background-color: blue; */
+}
+.section_container {
+    width: 100%;
+}
+.section_content {
+    padding: 14px;
+}
+
+.section_content a {
+    display: inline-flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+}
+.section_content a span:nth-child(1) {
+    font-size: 35px;
+}
+.section_content a span {
+    font-size: 28px;
+    font-weight: 700;
+}
+/* ------------------search------------------ */
+.search_data {
+    width: 100%;
+    display: inline-flex;
+    /* gap: 10px; */
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.search_data span {
+    padding-left: 2px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.1em;
+    background-color: #7978e9;
+    height: 2.05em;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: #fff;
+}
+.search_data input {
+    border: 1px solid black;
+    border-left: none;
+    /* border-radius: 5px; */
+    height: 2rem;
+    transition: all 200ms ease-in;
+    font-size: 1em;
+    font-weight: 500;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-left: 8px;
+}
+.search_data input:focus {
+    outline: none;
+}
+table {
+    width: 100%;
+    display: table;
+    /* margin-top: 30px; */
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+}
+table,
+tr,
+td,
+th {
+    border-bottom: 1px solid #b7a6a6;
+    border-collapse: collapse;
+    padding-bottom: 10px;
+    font-size: 0.96em;
+    text-align: center;
+}
+tr,
+td {
+    color: #2b2b35;
+}
+tbody tr:hover {
+    background-color: #f3ecec;
+}
+tbody tr:focus-within {
+    background-color: #eae2e2;
+}
+.actions {
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 12px;
+    border: none;
+}
+th{
+    color: rgb(29, 26, 26);
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(82, 73, 73);
+}
+.activity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8b7979;
+}
+/* ------------buttons--------------- */
+.delete {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+.delete {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+}
+.delete span {
+    font-family: "Poppins", sans-serif;
+}
+.delete:hover {
+    background-color: rgb(220, 72, 72);
+}
+.success {
+    margin-top: 10px;
+    background-color: rgb(210, 196, 196);
+    padding: 8px;
+    color: rgb(53, 47, 47);
+    font-size: 1em;
+    font-family: "poppins";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(165, 4, 4);
+    padding: 8px;
+    color: #fff;
+    font-size: 1em;
+    font-family: "poppins";
+}
+
+.delete {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.multi-delete button {
+    border: none;
+    background-color: #007bff;
+    padding: 5px;
+    margin-top: 20px;
+    color: white;
+    padding: 8px 15px;
+    margin-left: 1.5em;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.multi-delete button:hover{
+    background-color: #488fdb;
+
+}
+.restore {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+}
+.restore span {
+    font-family: "Poppins", sans-serif;
+}
+.restore:hover {
+    background-color: rgb(80, 205, 80);
+}
+.restore {
+    background-color: rgb(76, 167, 76);
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+.edit {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+}
+.edit span {
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: "Poppins", sans-serif;
+}
+.edit:hover {
+    background-color: rgb(80, 205, 80);
+}
+.edit {
+    background-color: rgb(76, 167, 76);
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+.view {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+}
+.view span {
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: "Poppins", sans-serif;
+}
+.view:hover {
+    background-color: rgb(104, 58, 255);
+}
+.view {
+    background-color: rgb(96, 65, 194);
+
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+.trashdata {
+    padding: 0;
+    margin-left: 1.1em;
+}
+.trashdata button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 0.25rem;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.trashdata button:hover{
+    background-color: #c22736;
+
+}
+.trashdata button a {
+    display: flex;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 1em;
+    align-items: center;
+    color: white;
+}
+.trashdata button a span {
+    text-decoration: none;
+    font-size: 1.2em;
+    padding-right: 2px;
+    color: white;
+}
+.trashdata button a span:nth-child(1) {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.tabledata {
+    overflow-y: scroll;
+}
+
+.menu1 {
+    background-color: var(--pri-sidebar-hover);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.menu1::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    bottom: 100%;
+    background-color: var(--pri-sidebar);
+    /* background-color: red; */
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 17px rgb(255, 255, 255);
+    z-index: -100;
+}
+.menu1::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 100%;
+    background-color: var(--pri-sidebar);
+    /* background-color: red; */
+    border-top-right-radius: 15px;
+    box-shadow: 0 -17px rgb(255, 255, 255);
+    z-index: -100;
+    /* transition: all 100ms ease-in; */
+}
+.menu1 span {
+    color: rgb(54, 46, 46);
+}
+@media screen and (max-width: 375px) {
+    .search_data input {
+        width: 125px;
+        font-size: 0.96em;
+        font-weight: 300;
+    }
+}
+@media screen and (max-width: 280px) {
+    .search_data span {
+        display: none;
+    }
+    .search_data input {
+        width: 150px;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 70px;
+    }
+    .main_container {
+        margin-left: 70px;
+        width: calc(100% - 70px);
+    }
+    .uil-angle-right::before {
+        display: none;
+    }
+    .uil-angle-left::before {
+        display: none;
+    }
+    .respon_dash,
+    .mobiles {
+        opacity: 0;
+        display: none;
+    }
+}
