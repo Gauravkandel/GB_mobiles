@@ -11,10 +11,8 @@ class sidebar extends Component
     /**
      * Create a new component instance.
      */
-    public $username = "";
-    public function __construct($componentName)
+    public function __construct(public string $message)
     {
-        $this->username = $componentName;
     }
 
     /**

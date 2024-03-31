@@ -18,7 +18,9 @@
 <body>
     <div class="active">
         {{-- ----------------------------sidebar section------------------------ --}}
-        <x-sidebar componentName="{{ $username->name }}" />
+        <x-sidebar :message="$username->name" />
+
+
 
         {{-- ------------------------------Section Container----------------------- --}}
         <section class="main_container" id="container">
@@ -135,8 +137,7 @@
                             <div class="flexbutton">
                                 <a href="#" target="_blank"><button type="submit"
                                         class="submitorder">Submit</button></a>&nbsp;
-                                <button type="reset" class="submitorder"
-                                    style="background-color: red">Reset</button>
+                                <button type="reset" class="submitorder" style="background-color: red">Reset</button>
                             </div>
                         </form>
                     </div>

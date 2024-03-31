@@ -53,8 +53,8 @@
                             <span class="respon_dash">LogOut</span></a>
                     </li>
                     <li>
-                        <a href="" title="{{ $username }}"><span class="uil uil-user"></span>
-                            <span class="respon_dash">{{ $username }}</span></a>
+                        <a href="" title="{{ $message }}"><span class="uil uil-user"></span>
+                            <span class="respon_dash">{{ $message }}</span></a>
                     </li>
                 </ul>
                 <!-- <div onclick="func();" id="">dark</div> -->
