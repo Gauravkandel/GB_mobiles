@@ -18,7 +18,7 @@
 <body>
     <div class="active">
         {{-- ----------------------------sidebar section------------------------ --}}
-        <x-sidebar componentName="{{$username->name}}" />
+        <x-sidebar componentName="{{ $username->name }}" />
         {{-- ------------------------------Section Container----------------------- --}}
         <section class="main_container" id="container">
             <div class="section_container">
