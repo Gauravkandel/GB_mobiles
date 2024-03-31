@@ -15,7 +15,7 @@ class DatabaseController extends Controller
     //
     public function welcome()
     {
-        return view("welcome");
+        return redirect('/dash');
     }
 
     function count_data()
