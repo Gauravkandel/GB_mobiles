@@ -16,7 +16,7 @@ return [
     'google' => [
         'client_id' => env("GOOGLE_CLIENT_ID"),
         'client_secret' => env("GOOGLE_CLIENT_SECRET"),
-        'redirect' => "https://gbmobiles-production.up.railway.app/callback"
+        'redirect' => "http://gbmobiles-production.up.railway.app/callback"
     ],
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
